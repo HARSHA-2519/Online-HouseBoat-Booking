@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Payment_DataSet" targetNamespace="http://tempuri.org/Payment_DataSet.xsd" xmlns:mstns="http://tempuri.org/Payment_DataSet.xsd" xmlns="http://tempuri.org/Payment_DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="HouseBoatBookingDB" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HouseBoatBookingDB (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.HouseBoatBookingDB.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HouseBoatBookingDB (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ADV_PAY.Adv_pid, BOAT_BOOKING.Book_id, HOUSE_BOAT_REG.Boatname, ADV_PAY.Bank_Name, ADV_PAY.Paydate, ADV_PAY.Pay_type, ADV_PAY.CardType, ADV_PAY.Card_no, ADV_PAY.Expir_dt, 
+                         ADV_PAY.Adv_amt
+FROM            ADV_PAY INNER JOIN
+                         BOAT_BOOKING ON ADV_PAY.Book_id = BOAT_BOOKING.Book_id INNER JOIN
+                         HOUSE_BOAT_REG ON BOAT_BOOKING.Boat_id = HOUSE_BOAT_REG.Boat_id</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Adv_pid" DataSetColumn="Adv_pid" />
+              <Mapping SourceColumn="Book_id" DataSetColumn="Book_id" />
+              <Mapping SourceColumn="Boatname" DataSetColumn="Boatname" />
+              <Mapping SourceColumn="Bank_Name" DataSetColumn="Bank_Name" />
+              <Mapping SourceColumn="Paydate" DataSetColumn="Paydate" />
+              <Mapping SourceColumn="Pay_type" DataSetColumn="Pay_type" />
+              <Mapping SourceColumn="CardType" DataSetColumn="CardType" />
+              <Mapping SourceColumn="Card_no" DataSetColumn="Card_no" />
+              <Mapping SourceColumn="Expir_dt" DataSetColumn="Expir_dt" />
+              <Mapping SourceColumn="Adv_amt" DataSetColumn="Adv_amt" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Payment_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Payment_DataSet" msprop:Generator_DataSetName="Payment_DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Adv_pid" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnAdv_pid" msprop:Generator_ColumnPropNameInRow="Adv_pid" msprop:Generator_ColumnPropNameInTable="Adv_pidColumn" msprop:Generator_UserColumnName="Adv_pid" type="xs:int" />
+              <xs:element name="Book_id" msprop:Generator_ColumnVarNameInTable="columnBook_id" msprop:Generator_ColumnPropNameInRow="Book_id" msprop:Generator_ColumnPropNameInTable="Book_idColumn" msprop:Generator_UserColumnName="Book_id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Boatname" msprop:Generator_ColumnVarNameInTable="columnBoatname" msprop:Generator_ColumnPropNameInRow="Boatname" msprop:Generator_ColumnPropNameInTable="BoatnameColumn" msprop:Generator_UserColumnName="Boatname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bank_Name" msprop:Generator_ColumnVarNameInTable="columnBank_Name" msprop:Generator_ColumnPropNameInRow="Bank_Name" msprop:Generator_ColumnPropNameInTable="Bank_NameColumn" msprop:Generator_UserColumnName="Bank_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Paydate" msprop:Generator_ColumnVarNameInTable="columnPaydate" msprop:Generator_ColumnPropNameInRow="Paydate" msprop:Generator_ColumnPropNameInTable="PaydateColumn" msprop:Generator_UserColumnName="Paydate" type="xs:dateTime" />
+              <xs:element name="Pay_type" msprop:Generator_ColumnVarNameInTable="columnPay_type" msprop:Generator_ColumnPropNameInRow="Pay_type" msprop:Generator_ColumnPropNameInTable="Pay_typeColumn" msprop:Generator_UserColumnName="Pay_type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CardType" msprop:Generator_ColumnVarNameInTable="columnCardType" msprop:Generator_ColumnPropNameInRow="CardType" msprop:Generator_ColumnPropNameInTable="CardTypeColumn" msprop:Generator_UserColumnName="CardType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Card_no" msprop:Generator_ColumnVarNameInTable="columnCard_no" msprop:Generator_ColumnPropNameInRow="Card_no" msprop:Generator_ColumnPropNameInTable="Card_noColumn" msprop:Generator_UserColumnName="Card_no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expir_dt" msprop:Generator_ColumnVarNameInTable="columnExpir_dt" msprop:Generator_ColumnPropNameInRow="Expir_dt" msprop:Generator_ColumnPropNameInTable="Expir_dtColumn" msprop:Generator_UserColumnName="Expir_dt" type="xs:dateTime" />
+              <xs:element name="Adv_amt" msprop:Generator_ColumnVarNameInTable="columnAdv_amt" msprop:Generator_ColumnPropNameInRow="Adv_amt" msprop:Generator_ColumnPropNameInTable="Adv_amtColumn" msprop:Generator_UserColumnName="Adv_amt" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

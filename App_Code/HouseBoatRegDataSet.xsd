@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HouseBoatRegDataSet" targetNamespace="http://tempuri.org/HouseBoatRegDataSet.xsd" xmlns:mstns="http://tempuri.org/HouseBoatRegDataSet.xsd" xmlns="http://tempuri.org/HouseBoatRegDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="HouseBoatBookingDB" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HouseBoatBookingDB (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.HouseBoatBookingDB.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HouseBoatBookingDB (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        HOUSE_BOAT_REG.Boat_id, HOUSE_BOAT_REG.Boatname, LOCATION.Loc_name, BOAT_TYPE.Typename, HOUSE_BOAT_REG.Tot_rooms, HOUSE_BOAT_REG.Descp, HOUSE_BOAT_REG.Cont_name, 
+                         HOUSE_BOAT_REG.Address_Line1, HOUSE_BOAT_REG.Address_Line2, HOUSE_BOAT_REG.Cont_no, HOUSE_BOAT_REG.Rate_per_day
+FROM            HOUSE_BOAT_REG INNER JOIN
+                         BOAT_TYPE ON HOUSE_BOAT_REG.Btype_id = BOAT_TYPE.Btype_id INNER JOIN
+                         LOCATION ON HOUSE_BOAT_REG.Loc_id = LOCATION.Loc_id</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Boat_id" DataSetColumn="Boat_id" />
+              <Mapping SourceColumn="Boatname" DataSetColumn="Boatname" />
+              <Mapping SourceColumn="Loc_name" DataSetColumn="Loc_name" />
+              <Mapping SourceColumn="Typename" DataSetColumn="Typename" />
+              <Mapping SourceColumn="Tot_rooms" DataSetColumn="Tot_rooms" />
+              <Mapping SourceColumn="Descp" DataSetColumn="Descp" />
+              <Mapping SourceColumn="Cont_name" DataSetColumn="Cont_name" />
+              <Mapping SourceColumn="Address_Line1" DataSetColumn="Address_Line1" />
+              <Mapping SourceColumn="Address_Line2" DataSetColumn="Address_Line2" />
+              <Mapping SourceColumn="Cont_no" DataSetColumn="Cont_no" />
+              <Mapping SourceColumn="Rate_per_day" DataSetColumn="Rate_per_day" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HouseBoatRegDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="HouseBoatRegDataSet" msprop:Generator_DataSetName="HouseBoatRegDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Boat_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnBoat_id" msprop:Generator_ColumnPropNameInRow="Boat_id" msprop:Generator_ColumnPropNameInTable="Boat_idColumn" msprop:Generator_UserColumnName="Boat_id" type="xs:int" />
+              <xs:element name="Boatname" msprop:Generator_ColumnVarNameInTable="columnBoatname" msprop:Generator_ColumnPropNameInRow="Boatname" msprop:Generator_ColumnPropNameInTable="BoatnameColumn" msprop:Generator_UserColumnName="Boatname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Loc_name" msprop:Generator_ColumnVarNameInTable="columnLoc_name" msprop:Generator_ColumnPropNameInRow="Loc_name" msprop:Generator_ColumnPropNameInTable="Loc_nameColumn" msprop:Generator_UserColumnName="Loc_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Typename" msprop:Generator_ColumnVarNameInTable="columnTypename" msprop:Generator_ColumnPropNameInRow="Typename" msprop:Generator_ColumnPropNameInTable="TypenameColumn" msprop:Generator_UserColumnName="Typename">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tot_rooms" msprop:Generator_ColumnVarNameInTable="columnTot_rooms" msprop:Generator_ColumnPropNameInRow="Tot_rooms" msprop:Generator_ColumnPropNameInTable="Tot_roomsColumn" msprop:Generator_UserColumnName="Tot_rooms" type="xs:int" />
+              <xs:element name="Descp" msprop:Generator_ColumnVarNameInTable="columnDescp" msprop:Generator_ColumnPropNameInRow="Descp" msprop:Generator_ColumnPropNameInTable="DescpColumn" msprop:Generator_UserColumnName="Descp">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cont_name" msprop:Generator_ColumnVarNameInTable="columnCont_name" msprop:Generator_ColumnPropNameInRow="Cont_name" msprop:Generator_ColumnPropNameInTable="Cont_nameColumn" msprop:Generator_UserColumnName="Cont_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address_Line1" msprop:Generator_ColumnVarNameInTable="columnAddress_Line1" msprop:Generator_ColumnPropNameInRow="Address_Line1" msprop:Generator_ColumnPropNameInTable="Address_Line1Column" msprop:Generator_UserColumnName="Address_Line1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address_Line2" msprop:Generator_ColumnVarNameInTable="columnAddress_Line2" msprop:Generator_ColumnPropNameInRow="Address_Line2" msprop:Generator_ColumnPropNameInTable="Address_Line2Column" msprop:Generator_UserColumnName="Address_Line2">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cont_no" msprop:Generator_ColumnVarNameInTable="columnCont_no" msprop:Generator_ColumnPropNameInRow="Cont_no" msprop:Generator_ColumnPropNameInTable="Cont_noColumn" msprop:Generator_UserColumnName="Cont_no" type="xs:long" />
+              <xs:element name="Rate_per_day" msprop:Generator_ColumnVarNameInTable="columnRate_per_day" msprop:Generator_ColumnPropNameInRow="Rate_per_day" msprop:Generator_ColumnPropNameInTable="Rate_per_dayColumn" msprop:Generator_UserColumnName="Rate_per_day" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:Boat_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
