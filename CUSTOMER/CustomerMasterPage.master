@@ -1,0 +1,349 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CustomerMasterPage.master.cs" Inherits="CUSTOMER_CustomerMasterPage" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MY | BOAT | BOOKING</title>
+    <link rel="icon" href="images/templatemo_logo.png" type="images/templatemo_logo.png"/>
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!-- templatemo 322 sailing -->
+<!-- 
+Sailing Template
+http://www.templatemo.com/preview/templatemo_322_sailing
+-->
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="content_slider_style.css" />
+<script type="text/javascript" src="js/jquery.1.3.2.min.js" ></script>
+<script type="text/javascript" src="js/jquery-ui.min.js" ></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
+	});
+</script>
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 414px;
+        }
+        .auto-style2 {
+            float: left;
+            width: 394px;
+            padding-right: 20px;
+            margin-right: 20px;
+        }
+    </style>
+
+</head>
+<body>
+     <form id="form1" runat="server">
+<div id="templatemo_wrapper_outer">
+
+<div id="templatemo_wrapper">
+	
+    <div id="templatemo_header">
+
+    	<div id="site_title">
+            <h1><a href="#"><img src="images/templatemo_logo.png" alt="logo" /></a></h1>
+        </div> <!-- end of site_title -->
+        
+        <div id="templatemo_menu">
+            <ul>
+                <li><asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton5_Click">HOME</asp:LinkButton></li>
+                <li><asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">PACKAGE BOOKING</asp:LinkButton></li>
+                <li><asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">HOUSEBOAT BOOKING</asp:LinkButton></li>
+                <li><asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">SEARCH BOAT</asp:LinkButton></li>
+                <li><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">LOGOUT</asp:LinkButton></li>
+            </ul>    	
+        </div> <!-- end of templatemo_menu -->
+
+    </div> <!-- end of templatemo_header -->
+    
+    <div id="templatemo_slider">
+    
+		<div id="featured" >
+			<ul class="ui-tabs-nav">
+				<li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-1"><a href="#fragment-1"><img src="images/content_slider/image1-small.jpg" alt="Image1small" /><span>Houseboat services and tour operators in Kerala</span></a></li>
+				<li class="ui-tabs-nav-item" id="nav-fragment-2"><a href="#fragment-2"><img src="images/content_slider/image2-small.jpg" alt="Image2small" /><span> A customer is the most important visitor on our premises.</span></a></li>
+				<li class="ui-tabs-nav-item" id="nav-fragment-3"><a href="#fragment-3"><img src="images/content_slider/image3-small.jpg" alt="Image3small" /><span>Backwaters of Kumarakom & Alleppey.</span></a></li>
+				<li class="ui-tabs-nav-item" id="nav-fragment-4"><a href="#fragment-4"><img src="images/content_slider/image4-small.jpg" alt="Image4small" /><span>My Boat Booking Holidays have offices in Bangalore and Maldives as well.</span></a></li>
+			</ul>
+
+			<!-- First Content -->
+			<div id="fragment-1" class="ui-tabs-panel" style="">
+				<img src="images/content_slider/image1.jpg" alt="Image 1" />
+				<div class="info" >
+					<h2><a href="#" > Houseboat services and tour operators in Kerala</a></h2>
+					<p>The Kerala backwaters are a network of interconnected canals,rivers,lakes and a chain of brackish lagoons.....<a href="#" >read more</a></p>
+				</div>
+			</div>
+
+			<!-- Second Content -->
+			<div id="fragment-2" class="ui-tabs-panel ui-tabs-hide" style="">
+				<img src="images/content_slider/image2.jpg" alt="Image 2" />
+				<div class="info" >
+					<h2><a href="#" >A customer is the most important visitor on our premises.</a></h2>
+					<p>Our boathouse Tour Packages take you into the unique world of water and wonderment and provides wonderful opportunity to explore Kerala backwater....<a href="#" >read more</a></p>
+				</div>
+			</div>
+
+			<!-- Third Content -->
+			<div id="fragment-3" class="ui-tabs-panel ui-tabs-hide" style="">
+				<img src="images/content_slider/image3.jpg" alt="Image 3" />
+				<div class="info" >
+					<h2><a href="#" >Backwaters of Kumarakom & Alleppey.</a></h2>
+					<p>My Boat Booking holidays is one of the number one houseboat operators in Alleppey and Kumarakom backwaters.Kumarakom Houseboat Holidays offering luxurious boathouse accommodation in Alleppey and Kumarakom backwaters.....<a href="#" >read more</a></p>
+				</div>
+			</div>
+
+			<!-- Fourth Content -->
+			<div id="fragment-4" class="ui-tabs-panel ui-tabs-hide" style="">
+				<img src="images/content_slider/image4.jpg" alt="Image 4" />
+				<div class="info" >
+					<h2><a href="#" >My Boat Booking Holidays have offices in Maldives as well.</a></h2>
+					<p>The Kettuvallam (houseboats) in the Alleppey backwaters are one of the prominent tourist attractions in Kerala.....<a href="#" >read more</a></p>
+				</div>
+			</div>
+    
+		</div>
+	</div> <!-- end of templatemo_slider -->
+    
+    <div id="templatemo_content">
+    	
+        <div class="col_w300">
+		
+        	
+            <div class="sb_news_box"><img src="images/templatemo_image_08.jpg" alt="Image 04" />
+    			<h6><a href="#">A promising stay in the houseboats</a></h6>
+                
+                
+              <div class="cleaner">
+                  <asp:Label ID="lbMsg" runat="server" Text="hhh"></asp:Label>
+                </div>
+            </div>
+			<asp:TreeView ID="TreeView1" runat="server">
+                <Nodes>
+                    <asp:TreeNode Text="PACKAGE BOOKING" Value="Package Booking" NavigateUrl="~/CUSTOMER/PackageBookingF.aspx"></asp:TreeNode>
+                    <asp:TreeNode Text="ONLINE BOOKING" Value="Custmize Package" NavigateUrl="~/CUSTOMER/House_Boat_Booking.aspx"></asp:TreeNode>
+                    <asp:TreeNode Text="UPDATE PROFILE" Value="Update Profile" NavigateUrl="~/CUSTOMER/Update_Profile.aspx"></asp:TreeNode>
+                    <asp:TreeNode NavigateUrl="~/CUSTOMER/Search_Boat_Details.aspx" Text="SEARCH BOAT DETAILS" Value="Search Boat"></asp:TreeNode>
+                    <asp:TreeNode Text="SEND FEEDBACK" Value="Send Feedback" NavigateUrl="~/CUSTOMER/Send_Feedback.aspx"></asp:TreeNode>
+<asp:TreeNode NavigateUrl="~/CUSTOMER/Track_Booking_Status.aspx" Text="TRACK BOOKING STATUS" Value="TRACK BOOKING STATUS"></asp:TreeNode>
+                    <asp:TreeNode NavigateUrl="~/CUSTOMER/Cancel_Booking.aspx" Text="CANCEL BOOKING" Value="Cancel Booking"></asp:TreeNode>
+                    <asp:TreeNode Text="VIEW BOAT DETAILS" Value="View Booking Details" NavigateUrl="~/CUSTOMER/View_Boat_Details.aspx"></asp:TreeNode>
+                    <asp:TreeNode Text="VIEW GALLERY" Value="View Gallery" NavigateUrl="~/CUSTOMER/View_Gallery.aspx"></asp:TreeNode>
+                    <asp:TreeNode Text="VIEW PACKAGE" Value="View Packages" NavigateUrl="~/CUSTOMER/View_Packages.aspx"></asp:TreeNode>
+                    <asp:TreeNode Text="VIEW TRAIFF" Value="View Tariff" NavigateUrl="~/CUSTOMER/View_Tariff.aspx"></asp:TreeNode>
+                </Nodes>
+                    </asp:TreeView>
+            <%--<div class="sb_news_box">
+            <img src="images/templatemo_image_05.jpg" alt="Image 05" />
+                <h6><a href="#">Vestibulum pharetra tortor</a></h6>
+                 Donec et purus velit, eget euismod risus consectetur dolo.--%>
+                <div class="cleaner"></div>
+            <%--   </div>--%>			
+            <%--<div class="sb_news_box">
+       	    <img src="images/templatemo_image_06.jpg" alt="Image 06" />
+                <h6><a href="#">Morbi vitae velit eget</a></h6>
+                Cras suscipit condimentum dolor, in facilisis est adipiscing.--%>
+                <div class="cleaner"></div>
+            <%--</div>--%>
+			
+            <div class="sb_news_box">
+                <%--<img src="images/templatemo_image_07.jpg" alt="Image 07" />
+                <h6><a href="#">Etiam a enim id sapien</a></h6>
+                Praesent ultrices nunc sit amet nulla vestibulum pellentesque.--%>
+                <div class="cleaner"></div>
+                <%--   </div>--%>
+            
+            <div class="btn_more"><a href="news.html">Read more</a></div>	
+        </div>
+        </div>
+        <div class="auto-style2">
+            <h4><span>CUSTOMER PAGE</span></h4>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                <p class="auto-style1">
+                    <br />
+                </p>
+        
+        </asp:ContentPlaceHolder>
+            <%--<div class="image_wrapper"><img width="240" height="110" src="images/templatemo_image_01.jpg" alt="Image01" /></div>
+            <p><em>Morbi sed nulla ac est cursus suscipit eu ac lectus. Curabitur  ullamcorper nibh nisi, sed eleifend dolor. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow"><strong>XHTML</strong></a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"><strong>CSS</strong></a>.</em></p>
+                        
+            <ul class="tmo_list">
+                <li>Duis bibendum diam et eros</li>
+                <li>Etiam accumsan ante ac augue</li>
+                <li>Nullam faucibus tortor in sem</li>
+                <li>Phasellus cursus congue arcu</li>                        
+            </ul>
+            <div class="cleaner"></div>
+            <div class="btn_more"><a href="services.html">Read more</a></div>--%>       <%-- </div>
+        
+        <div class="col_w300 col_last">
+            <h2>ABOUT <span>US</span></h2>
+            <div class="image_wrapper"><img width="240" height="110" src="images/templatemo_image_02.jpg" alt="Image 02" /></div>
+            <p><em>Etiam ut urna ante, ut pulvinar ante. Vivamus a metus quam. Aenean non eros nunc. </em></p>
+            <p>Sailing is Free CSS Template provided by <strong>templatemo</strong> website. Feel free to download and use this template for your websites. Credits go to <a rel="nofollow" href="http://www.photovaco.com" target="_blank">Free Photos</a> for photos and <a rel="nofollow" href="http://www.brusheezy.com/brush/1400-24-Clouds" target="_blank">Milanda Design</a> for a Photoshop Brush. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac elit est, eget hendrerit erat.</p>
+          <div class="btn_more"><a href="about.html">Read more</a></div>--%>
+      
+    
+    	<div class="cleaner"></div>
+    </div>
+    
+	<div class="cleaner"></div>
+</div>
+</div>
+</div>
+<div id="templatemo_footer_wrapper">
+	<div id="footer_top"></div>
+	
+	<div id="templatemo_footer">
+    
+        <div class="col_w220">
+            <h5>Follow Us</h5>
+            <p>My Boat Booking Holidays is one of the leading and fastest growing houseboat services and tour operators in Kerala</p>
+            
+            <ul id="social_box">
+                <li><a href="#"><img src="images/facebook.png" alt="Facebook" /></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt="Twitter" /></a></li>
+                <li><a href="#"><img src="images/linkedin.png" alt="linkedin" /></a></li>
+                <li><a href="#"><img src="images/technorati.png" alt="Technorati" /></a></li>
+                <li><a href="#"><img src="images/myspace.png" alt="Myspace" /></a></li>                
+            </ul>
+            
+        </div>
+        
+        <div class="col_w220">
+            <h5>Our Pages</h5>
+            <ul class="tmo_list">
+                <li><asp:LinkButton ID="LinkButton6" runat="server" OnClick="LinkButton5_Click">HOME</asp:LinkButton></li>
+                <li><asp:LinkButton ID="LinkButton7" runat="server" OnClick="LinkButton2_Click">Package Booking</asp:LinkButton></li>
+                <li><asp:LinkButton ID="LinkButton8" runat="server" OnClick="LinkButton4_Click">Houseboat Booking</asp:LinkButton></li>
+                <li><asp:LinkButton ID="LinkButton9" runat="server" OnClick="LinkButton3_Click">Search Boat</asp:LinkButton></li>
+                <li><a href="#">Contact</a></li>
+            </ul>  
+ 
+        </div>
+        
+        <div class="col_w220">
+            <h5>SERVICES</h5>
+			<ul class="tmo_list">
+                <li><asp:LinkButton ID="LinkButton10" runat="server" OnClick="LinkButton10_Click">Update Profile</asp:LinkButton></li>
+                <li><asp:LinkButton ID="LinkButton11" runat="server" OnClick="LinkButton11_Click">Feedback</asp:LinkButton></li>
+                <li><asp:LinkButton ID="LinkButton12" runat="server" OnClick="LinkButton12_Click">View Boat Details</asp:LinkButton></li>
+                <li><asp:LinkButton ID="LinkButton13" runat="server" OnClick="LinkButton13_Click">View Gallery</asp:LinkButton></li>
+                 <li><asp:LinkButton ID="LinkButton14" runat="server" OnClick="LinkButton14_Click">View Package</asp:LinkButton></li>
+            </ul>
+ 
+        </div>
+        
+        <div class="col_w220 col_last">
+            <h5>ADDRESS</h5>
+            <pre>
+Mukul Das,
+Marketing Manager (Kerala),
+My Boat Booking,
+Kerala, India - 686563
+Email: myboatbooking12@gmail.com
+Mobile: +91 9847608883
+Office: +91 481 2523598
+</pre>
+        </div>
+        
+        <div class="cleaner"></div>
+    </div> <!-- end of footer -->
+	
+    <div id="templatemo_copyright">
+        Copyright © 2020 <a href="#">My Boat Booking</a> | Designed by <a rel="nofollow" href="http://www.templatemo.com" target="_parent">MARIA</a>
+    </div>
+    
+</div>
+    </form>
+</body>
+</html>
+<%--<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 12px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2" rowspan="6">
+                    <asp:TreeView ID="TreeView1" runat="server">
+                    </asp:TreeView>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>--%>
